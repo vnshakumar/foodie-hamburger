@@ -2,6 +2,7 @@ const hamburgerIcon = document.querySelector('.hamburger-menu-container')
 const headerContent = document.querySelector('.header-content')
 const closeIcon = document.querySelector('.close-icon')
 const nav = document.querySelector('nav')
+const gototop = document.querySelector('.go-to-top') 
 
 hamburgerIcon.addEventListener('click', (e) => {
     e.stopPropagation()
@@ -18,5 +19,9 @@ closeIcon.addEventListener('click', () => {
 
 window.addEventListener('click', () => {
     headerContent.classList.remove('menu-open')
+})
+
+gototop.addEventListener('click',() =>{
+  
 })
 
